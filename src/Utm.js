@@ -1,4 +1,3 @@
-import JSUTIL from '@andresclua/jsutil/src/js_helper';
 class UTM {
     constructor(payload){
         this.DOM = {
@@ -7,8 +6,6 @@ class UTM {
             currentURL: window.location.href, // compelte url
             originUrl : window.location.origin + window.location.pathname, // root url
         }
-        this.JSUTIL = new JSUTIL();
-
         if(this.DOM.links){
             this.init()
             this.events()
