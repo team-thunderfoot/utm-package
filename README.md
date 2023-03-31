@@ -1,28 +1,23 @@
-# utm-package
-Create a repository for urls that contain UTM in the url
+
+The purpose of this package is to preserve all parameters in the URL while browsing a website, even when navigating to different pages. For instance, if you visit a website such as x.com/?utm_source="a" and then move to another page like x.com/foo/?utm_source="a", the "utm_source" parameter will remain in the URL. This package ensures that all links within the website retain their parameters, regardless of whether the links contain them or not.
+
 
 ### Install
 ```sh
 npm i @teamthunderfoot/utm
 ```
-### Setup
+### Basic Setup
+
+By default it will check all anchor tags
 ```sh
 import UTM from '@teamthunderfoot/utm';
-```
-### Init class for all links 
-    allLinks: true  -> if the utm should set to all links
-```sh
-    new UTM({
-        allLinks : true, 
-    });
+new UTM();
 ```
 
-### Init class for specific links 
-    allLinks: set false -> for only some  specific links
-    linkTarget : all links with this class will be overwritten by the url with utms
+### Custom links
+Is it possible to track only certain elements on your page if that is what you desire
 ```sh
-    new UTM({
-        allLinks : false, 
-        linkTarget : ".js--utm" 
-    });
+new UTM({
+    linkTarget : ".js--utm" 
+});
 ```
