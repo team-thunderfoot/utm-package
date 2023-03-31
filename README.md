@@ -10,7 +10,7 @@ npm i @teamthunderfoot/params
 
 By default it will check all anchor tags
 ```sh
-import UTM from '@teamthunderfoot/params';
+import Params from '@teamthunderfoot/params';
 new Params();
 ```
 
