@@ -1,6 +1,6 @@
 {
-  "name": "@andresclua/utm-package",
-  "version": "0.0.2",
+  "name": "@teamthunderfoot/utm-package",
+  "version": "0.0.1",
   "description": "UTM package",
   "main": "",
   "scripts": {
