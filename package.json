@@ -1,7 +1,7 @@
 {
-  "name": "@teamthunderfoot/utm",
+  "name": "@teamthunderfoot/params",
   "version": "0.0.4",
-  "description": "UTM package",
+  "description": "Params package",
   "main": "",
   "scripts": {
     "webpack": "webpack --watch"
@@ -25,7 +25,7 @@
     "@babel/core": "^7.14.3"
   },
   "keywords": [
-    "NPM",
+    "params",
     "utm",
     "utm_campaign"
   ]
