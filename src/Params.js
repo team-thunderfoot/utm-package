@@ -1,8 +1,7 @@
-class UTM {
+class Params {
     constructor(payload){
         this.DOM = {
-            allLinks : payload.allLinks,
-            links : (payload.allLinks) ? document.querySelectorAll("a") : document.querySelectorAll(payload.linkTarget), // all links to be replaced by the utm
+            links : (payload && payload.linkTarget ) ? document.querySelectorAll(payload.linkTarget) : document.querySelectorAll("a"), // all links to be replaced by the utm
             currentURL: window.location.href, // compelte url
             originUrl : window.location.origin + window.location.pathname, // root url
         }
@@ -29,4 +28,4 @@ class UTM {
     events(){  }
 }
 
-export default UTM;   
+export default Params;   

@@ -4,20 +4,20 @@ The purpose of this package is to preserve all parameters in the URL while brows
 
 ### Install
 ```sh
-npm i @teamthunderfoot/utm
+npm i @teamthunderfoot/params
 ```
 ### Basic Setup
 
 By default it will check all anchor tags
 ```sh
-import UTM from '@teamthunderfoot/utm';
-new UTM();
+import UTM from '@teamthunderfoot/params';
+new Params();
 ```
 
 ### Custom links
 Is it possible to track only certain elements on your page if that is what you desire
 ```sh
-new UTM({
+new Params({
     linkTarget : ".js--utm" 
 });
 ```
