@@ -16,7 +16,7 @@ npm i @teamthunderfoot/utm-package
 import UTM from '@teamthunderfoot/utm-package';
 ```
 ### Init for all links on the page
-    // allLinks: true  -> if the utm should set to all links
+    allLinks: true  -> if the utm should set to all links
 ```sh
     new UTM({
         allLinks : true, 
@@ -24,8 +24,8 @@ import UTM from '@teamthunderfoot/utm-package';
 ```
 
 ### Init for specifix links on the page
-    // allLinks: set false -> for only some  specific links
-    // linkTarget : all links with this class will be overwritten by the url with utms
+    allLinks: set false -> for only some  specific links
+    linkTarget : all links with this class will be overwritten by the url with utms
 ```sh
     new UTM({
         allLinks : false, 
